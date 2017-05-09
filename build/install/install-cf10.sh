@@ -11,7 +11,7 @@
 /opt/coldfusion10/cfusion/bin/coldfusion start; sleep 15
 
 # Simulate a browser request on the admin UI to complete installation
-wget --O /dev/null http://localhost:8500/CFIDE/administrator/index.cfm?configServer=true
+wget -O- /dev/null http://localhost:8500/CFIDE/administrator/index.cfm?configServer=true
 
 # Stop the CF server instance
 /opt/coldfusion10/cfusion/bin/coldfusion stop
